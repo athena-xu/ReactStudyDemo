@@ -150,7 +150,16 @@ class ListWrap extends Component{
   render() {
     return (
       <div className="list-wrap">
-        {this.state.lists}
+        {
+        this.state.lists
+        /* 使用lists数组或如下
+        this.props.showList.map((v) => {
+          if(v.name.indexOf(this.props.filterText) > -1) {
+            return<Row item={v} key={v.id} chooseHandler={this.props.chooseHandler}></Row>
+          }
+        })
+        */
+        }
       </div>
     )
   }
