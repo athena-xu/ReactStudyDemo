@@ -7,6 +7,7 @@ import RefFn from './pages/refFn'
 import ZhihuComp from './pages/zhihuComponent'
 import Counter from './pages/counter'
 import JsxTips from './pages/jsxTips'
+import BooksManagement from './pages/booksManagement'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <ZhihuComp />
       <Counter />
       <JsxTips />
+      <BooksManagement />
     </div>
   );
 }

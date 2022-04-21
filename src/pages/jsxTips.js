@@ -1,4 +1,3 @@
-import { getValue } from "@testing-library/user-event/dist/utils";
 import { Component } from "react";
 import '../styles/passVaule.css'
 
@@ -31,7 +30,7 @@ export default class JSXTips extends Component{
   }
   render() {
     const {num, str, arr, arr2, kong, noDefine, flag, obj} = this.state;
-    return (
+    const dom = (
       <div className='borderSty'>
         <p>可用数据：{this.state.arr}</p>
         <p>可用表达式：{this.getValue()}</p>
@@ -49,8 +48,9 @@ export default class JSXTips extends Component{
             })
           }
         </ul>
-        
       </div>
     )
+    console.log('1',dom)
+    return dom;
   }
 }

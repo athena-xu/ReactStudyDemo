@@ -1,0 +1,15 @@
+@import "./index.css";
+
+.bookTable {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+thead {
+  background-color: #d8f1f0;
+}
+tr {
+  height: 40px;
+}
+button {
+  margin: 0 5px;
+} 
