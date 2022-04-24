@@ -8,6 +8,8 @@ import ZhihuComp from './pages/zhihuComponent'
 import Counter from './pages/counter'
 import JsxTips from './pages/jsxTips'
 import BooksManagement from './pages/booksManagement'
+import ComponentsStudy1 from './pages/componentsStudy1'
+import CompCommunication from './pages/compCommunication'
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
       <Counter />
       <JsxTips />
       <BooksManagement />
+      <ComponentsStudy1 />
+      <CompCommunication />
     </div>
   );
 }
