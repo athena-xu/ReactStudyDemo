@@ -10,6 +10,8 @@ import JsxTips from './pages/jsxTips'
 import BooksManagement from './pages/booksManagement'
 import ComponentsStudy1 from './pages/componentsStudy1'
 import CompCommunication from './pages/compCommunication'
+import ReactSlot from './pages/reactSlot'
+import StepCompContext from './pages/stepCompContext'
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
       <BooksManagement />
       <ComponentsStudy1 />
       <CompCommunication />
+      <ReactSlot />
+      <StepCompContext />
     </div>
   );
 }

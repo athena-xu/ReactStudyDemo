@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
+// 父子组件通信
 // 类组件
 export default class ClassCompFather extends Component {
   render() {

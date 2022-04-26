@@ -1,0 +1,27 @@
+.titleBar {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 40px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.middle, .searchInp {
+  flex: 1;
+  height: 100%;
+  outline: none;
+  border: 1px solid #666;
+  border-radius: 2px;
+}
+
+.searchInp {
+  width: calc(100% - 10px);
+  border: 0;
+  padding: 0;
+  padding-left: 10px;
+  margin: 0;
+}
+.left, .right {
+  width: 10%;
+}
