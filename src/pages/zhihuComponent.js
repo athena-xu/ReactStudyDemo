@@ -80,10 +80,10 @@ export default class ZhihuComp extends Component{
       choosedList: this.state.listData.filter( v => !!v.choosed)
     }, () => {
       // 可在setState 的回调函数中获取当前值
-      console.log('回调中打印',this.state.choosedList)
+      // console.log('回调中打印',this.state.choosedList)
     })
     // setState 异步操作
-    console.log('打印',this.state.choosedList)
+    // console.log('打印',this.state.choosedList)
   }
   render() {
     return (

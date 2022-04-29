@@ -7,8 +7,8 @@ export default class RefFn extends Component{
 
     }
     inpChange = (ele) => {
-        console.log('ele',ele)
-        console.log('ref',this.myRef)
+        // console.log('ele',ele)
+        // console.log('ref',this.myRef)
     }
     render() {
         return (

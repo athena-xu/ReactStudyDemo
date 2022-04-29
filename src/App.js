@@ -12,6 +12,8 @@ import ComponentsStudy1 from './pages/componentsStudy1'
 import CompCommunication from './pages/compCommunication'
 import ReactSlot from './pages/reactSlot'
 import StepCompContext from './pages/stepCompContext'
+import SetStateExplain from './pages/setStateExplain'
+import RenderOptimize from './pages/renderOptimize'
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
       <CompCommunication />
       <ReactSlot />
       <StepCompContext />
+      <SetStateExplain />
+      <RenderOptimize />
     </div>
   );
 }

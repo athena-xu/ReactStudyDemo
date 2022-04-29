@@ -22,11 +22,11 @@ export default class JSXTips extends Component{
     }
   }
   getValue() {
-    console.log('111')
+    // console.log('111')
     return this.state.num + this.state.str
   }
   liClick(e, item, index) {
-    console.log(item,index)
+    // console.log(item,index)
   }
   render() {
     const {num, str, arr, arr2, kong, noDefine, flag, obj} = this.state;
@@ -44,13 +44,13 @@ export default class JSXTips extends Component{
         <ul>
           {
             this.state.arr.map((item, index) => {
-              return <li onClick={(e) => {this.liClick(e,item,index)}}>{item}</li>
+              return <li key={item} onClick={(e) => {this.liClick(e,item,index)}}>{item}</li>
             })
           }
         </ul>
       </div>
     )
-    console.log('1',dom)
+    // console.log('1',dom)
     return dom;
   }
 }

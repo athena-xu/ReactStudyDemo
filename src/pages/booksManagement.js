@@ -120,7 +120,7 @@ export default class BooksManage extends Component{
           <thead>
             <tr>
               {
-                this.state.columns.map(item => <th style={{width: item.width + 'px'}}>{item.title}</th>)
+                this.state.columns.map(item => <th key={item.title} style={{width: item.width + 'px'}}>{item.title}</th>)
               }
             </tr>
           </thead>
@@ -128,13 +128,13 @@ export default class BooksManage extends Component{
             {
               this.state.books.map((item,id) => {
                 return (
-                  <tr>
+                  <tr key={id}>
                     {
-                      this.state.columns.map(v => {
+                      this.state.columns.map((v,index) => {
                         if(v.key === 'index'){
-                          return <td>{id+1}</td>
+                          return <td key={item.name+id+index}>{id+1}</td>
                         }else {
-                          return <td>{
+                          return <td key={item.name+id+index}>{
                               (v.render && v.render(item,id)) || item[v.key]
                             }</td>
                         }

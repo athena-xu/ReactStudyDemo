@@ -41,7 +41,7 @@ class ClassCompChild extends Component{
         <span onClick={() => speak(sex)}>{name} </span>
         <span>{age} </span>
         <span>{sex} </span>
-        {hobby.map(item => <span>{item} </span>)}
+        {hobby.map(item => <span key={item}>{item} </span>)}
       </div>
     )
   }
