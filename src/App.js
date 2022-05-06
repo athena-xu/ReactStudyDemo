@@ -14,6 +14,7 @@ import ReactSlot from './pages/reactSlot'
 import StepCompContext from './pages/stepCompContext'
 import SetStateExplain from './pages/setStateExplain'
 import RenderOptimize from './pages/renderOptimize'
+import EventsStudy from './pages/eventsStudy'
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
       <StepCompContext />
       <SetStateExplain />
       <RenderOptimize />
+      <EventsStudy />
     </div>
   );
 }

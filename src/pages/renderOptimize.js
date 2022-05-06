@@ -6,7 +6,7 @@ import '../styles/index.css'
  * shouldComponentUpdate(nextProps,nextState) 返回true或false
  * PureComponent;
  * PureComponent 和shouldComponetUpdate 不能同时存在
- * PureComponent 浅比较 （shallowEqual）判断如果 props 没有变就不会重新渲染 ; 改变mainData 某一项的price值没有触发渲染
+ * PureComponent 原型上有 isPureReactComponent 属性，浅比较 （shallowEqual）判断如果 props 没有变就不会重新渲染 ; 改变mainData 某一项的price值没有触发渲染
  * 
  * memo 高阶组件，适用于函数式组件
  * 
@@ -81,7 +81,17 @@ export default class RenderOptimize extends PureComponent {
     })
   }
   changeData() {
-    const mainDataCopy = this.state.mainData;
+    // 不会触发改变，因为mainDataCopy 和 this.state.mainData 引用一样；
+    // const mainDataCopy = this.state.mainData;
+    // mainDataCopy[1].price = '10.00'
+    // this.setState((preS,props) => {
+    //   return {
+    //     mainData: mainDataCopy
+    //   }
+    // })
+
+    // 这样可以改变，mainDataCopy 开辟了一个新的内存空间
+    const mainDataCopy = [...this.state.mainData];
     mainDataCopy[1].price = '10.00'
     this.setState((preS,props) => {
       return {
