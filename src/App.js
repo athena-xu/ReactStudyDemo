@@ -15,6 +15,8 @@ import StepCompContext from './pages/stepCompContext'
 import SetStateExplain from './pages/setStateExplain'
 import RenderOptimize from './pages/renderOptimize'
 import EventsStudy from './pages/eventsStudy'
+import UncontrolledComp from './pages/uncontrolledComp'
+import HigherOrderComp from './pages/higherOrderComp'
 
 function App() {
   return (
@@ -37,6 +39,8 @@ function App() {
       <SetStateExplain />
       <RenderOptimize />
       <EventsStudy />
+      <UncontrolledComp />
+      <HigherOrderComp />
     </div>
   );
 }

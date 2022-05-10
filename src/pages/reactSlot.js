@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../styles/index.css'
 import '../styles/reactSlot.css'
 
+// react 实现slot功能
 // 三列布局标题栏，中间固定为搜索框
 
 export default class ReactFather extends Component {

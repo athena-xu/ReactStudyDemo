@@ -3,7 +3,6 @@ import { EventEmitter } from 'events'
 
 // 事件总线：event bus
 // 开发中可以将 EventEmitter 对象单独放在一个文件中，export 出来
-
 const eventBus = new EventEmitter();
 
 export default class EventsStudy extends PureComponent {

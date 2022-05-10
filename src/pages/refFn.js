@@ -2,6 +2,7 @@ import React,{Component, createRef, PureComponent} from "react";
 import '../styles/index.css'
 
 // ref 获取DOM；
+// ref 转发；
 /**
  * 1，ref="字符串/对象/函数"；this.refs.名
  */

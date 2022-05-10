@@ -2,6 +2,7 @@ import React, { Component, createContext } from 'react';
 
 // 跨组件通信-2种
 // props 层层传递；context上下文
+
 // export default class StepCompApp extends Component {
 //   constructor() {
 //     super();

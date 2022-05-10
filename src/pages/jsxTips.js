@@ -1,6 +1,7 @@
 import { Component } from "react";
 import '../styles/passVaule.css'
 
+// JSX 学习
 export default class JSXTips extends Component{
   constructor() {
     super()
