@@ -1,4 +1,4 @@
-import React,{Component, createRef, PureComponent} from "react";
+import React,{Component, createRef, PureComponent, forwardRef} from "react";
 import '../styles/index.css'
 
 // ref 获取DOM；
@@ -48,7 +48,7 @@ export default class RefFn extends Component{
     this.pRef2.innerHTML = '修改了'
   }
   btnChange2() {
-    this.cmpRef.current.changeMsg()
+    // this.cmpRef.current.changeMsg()
   }
 }
 
@@ -75,3 +75,8 @@ class RefChild extends PureComponent{
 
 
 // 函数式组件不能使用ref, 因为他们没有实例，可以使用React.forwardRef 高阶函数，或者hook
+
+const EnhanceRef = forwardRef((props, ref) => {
+  // 多了一个ref参数
+  return <p ref={ref}></p>
+})
