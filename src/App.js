@@ -17,30 +17,34 @@ import RenderOptimize from './pages/renderOptimize'
 import EventsStudy from './pages/eventsStudy'
 import UncontrolledComp from './pages/uncontrolledComp'
 import HigherOrderComp from './pages/higherOrderComp'
+import PortalsStudy from './pages/portalsStudy'
 
 function App() {
   return (
     <div className="App">
-    <PassValueParent />
-      {
-        // <PassValueParent />
-      }
-      <SlotWrite />
-      <ComputedWrite/>
-      <RefFn/>
-      <ZhihuComp />
-      <Counter />
-      <JsxTips />
-      <BooksManagement />
-      <ComponentsStudy1 />
-      <CompCommunication />
-      <ReactSlot />
-      <StepCompContext />
-      <SetStateExplain />
-      <RenderOptimize />
-      <EventsStudy />
-      <UncontrolledComp />
-      <HigherOrderComp />
+      {/* <div id="modal-wrapper"></div>  // 放在这里找不到的！！*/}
+
+      <PassValueParent />
+        {
+          // <PassValueParent />
+        }
+        <SlotWrite />
+        <ComputedWrite/>
+        <RefFn/>
+        <ZhihuComp />
+        <Counter />
+        <JsxTips />
+        <BooksManagement />
+        <ComponentsStudy1 />
+        <CompCommunication />
+        <ReactSlot />
+        <StepCompContext />
+        <SetStateExplain />
+        <RenderOptimize />
+        <EventsStudy />
+        <UncontrolledComp />
+        <HigherOrderComp />
+        <PortalsStudy />
     </div>
   );
 }

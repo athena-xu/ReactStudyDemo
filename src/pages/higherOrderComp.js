@@ -68,7 +68,8 @@ function enhanceGetJSX(WrappedComponent) {
       return < LoginComp / >
     }
   }
-  // 类组件
+  {/* 
+    // 类组件
   //  class Text extends PureComponent{
   //    constructor() {
   //      super()
@@ -86,6 +87,8 @@ function enhanceGetJSX(WrappedComponent) {
   //   }
   // }
   // return Text
+  */}
+
 }
 const EnhanceJsxPet = enhanceGetJSX(Pets)
 /**
