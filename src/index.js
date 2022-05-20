@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
+  // StrictMode 开启严格模式
   <React.StrictMode>
     <App />
   </React.StrictMode>,

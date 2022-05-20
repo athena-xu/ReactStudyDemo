@@ -21,7 +21,7 @@ class ModalPortals extends PureComponent{
 }
 class Modal extends PureComponent {
   componentDidMount() {
-    console.log('112',document.getElementById('modal-wrapper'))
+    // console.log('112',document.getElementById('modal-wrapper'))
   }
   render() {
     return (

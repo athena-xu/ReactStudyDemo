@@ -1,0 +1,22 @@
+.title {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 8px;
+  color: #0f6dd8;
+  text-decoration: underline;
+}
+.desc,
+.createTime {
+  font-size: 16px;
+  color: #666;
+}
+.tip {
+  display: none;
+}
+.tipHover {
+  display: flex;
+  flex-direction: column;
+  padding-left: 60px;
+  margin-top: 10px;
+  text-align: left;
+}

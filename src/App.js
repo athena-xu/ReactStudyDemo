@@ -18,6 +18,7 @@ import EventsStudy from './pages/eventsStudy'
 import UncontrolledComp from './pages/uncontrolledComp'
 import HigherOrderComp from './pages/higherOrderComp'
 import PortalsStudy from './pages/portalsStudy'
+import CssHome from './pages/cssAndStudy/home'
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
         <UncontrolledComp />
         <HigherOrderComp />
         <PortalsStudy />
+        <CssHome />
     </div>
   );
 }
