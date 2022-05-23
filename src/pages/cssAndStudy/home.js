@@ -246,7 +246,11 @@ export default class CSSHome extends PureComponent {
             )
           })
         }
-        <Modal show={showModal} item={currentItem} />
+        <Modal 
+          show={showModal} 
+          item={currentItem} 
+          modalTitle={currentItem?.name + '的二级研报类型'}
+          closeModal={() => {this.setState({showModal: !showModal})}}/>
       </div>
     )
   }
