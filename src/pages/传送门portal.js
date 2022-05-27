@@ -27,7 +27,7 @@ class Modal extends PureComponent {
     return (
       <div className='modal-bg'>
         <div className='modal-content'>
-          弹窗内容
+          {/* 弹窗内容 */}
         </div>
       </div>
     )
